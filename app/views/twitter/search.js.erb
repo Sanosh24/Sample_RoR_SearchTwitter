@@ -1,0 +1,2 @@
+$("#search-result-list").empty().append("<%= escape_javascript(render(partial: '/twitter/search_result_set', locals: { result: @result })) %>");
+hideSpinner();

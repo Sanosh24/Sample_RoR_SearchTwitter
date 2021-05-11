@@ -1,0 +1,20 @@
+<% unless result.blank? %>
+	<% result.each_with_index do |tweet, i| %>
+		<div class="row sr-rls-rw pt-2 mb-1 <%= color_class_by_index(i) %>">
+			<div class="col-sm-12">
+				<div class="row twt-usr-detail">
+					<span class="user-name"><%= tweet[:user_name] %></span>
+				</div>
+				<div class="row twt-text-bx pt-1">
+					<span class="twt-txt"><%= tweet[:tweet_text] %></span>
+				</div>
+			</div>
+		</div>
+	<% end %>
+<% else %>
+	<div class="row sr-rls-rw pt-2 mb-1 lgh-ble centered">
+		<div class="col-sm-12">
+			<span>No search results found.</span>
+		</div>
+	</div>
+<% end %>

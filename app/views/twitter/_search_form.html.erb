@@ -1,0 +1,18 @@
+<div class="tw-search-form">
+	<%= form_tag('/search', { remote: true, method: :get, id: "twt-search-form" }) do %>
+		<div class="form-group mb-4">
+			<h1 class="main-heading">Tweet Search</h1>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-9 no-padding-right">
+					<%= text_field_tag :search_text, "", :class => "form-control", placeholder: "Search tweets (query, #query, from:query, to:query, @query etc.)", required: true %>
+				</div>
+				<div class="col-sm-3">
+					<%= number_field_tag :rec_number, '', :class => "form-control", required: true, min: 1, placeholder: "No of records" %>
+				</div>
+			</div>
+    </div>
+    <%= submit_tag "Search", class: "btn btn-primary px-5", id: "srch-frm-sbt-btn" %>
+	<% end %>
+</div>

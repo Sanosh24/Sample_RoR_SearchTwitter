@@ -1,0 +1,58 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.nav-item {
+	margin: auto 25px;
+}
+.align-menu {
+	justify-content: start;
+}
+.justity-right {
+	justify-content: right;
+}
+.justify-fend {
+	justify-content: flex-end;
+}
+.centered {
+	text-align: center;
+}
+.lgh-ble {
+	background-color: aliceblue;
+}
+.lgh-ylw {
+	background-color: lightgoldenrodyellow
+}
+.sr-rls-list {
+	overflow: auto;
+	max-height: 900px;
+}
+.user-name {
+	font-weight: bold;
+}
+.twt-usr-detail {
+	border-bottom: 1px solid #aaaaaa;
+}
+.w16 {
+	width: 16%;
+}
+.main-heading {
+  font-weight: bold;
+  color: cadetblue;
+}
+.no-padding-right {
+	padding-right: 0;
+}
+#loading-spinner {
+ 	position: absolute;
+  top: 40%;
+  left: 47%;
+  z-index: 100;
+}

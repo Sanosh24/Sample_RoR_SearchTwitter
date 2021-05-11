@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TwitterSearch</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'main' %>
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <%= render :partial => "/layouts/navigation_bar" %>
+    </div>
+    <div class="container-fluid">
+      <%= render :partial => "/layouts/loading_spinner" %>
+      <%= yield %>
+    </div>
+    <div class="nav-footer mb-5">
+      <%= render :partial => "/layouts/footer_bar" %>
+    </div>
+  </body>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</html>
